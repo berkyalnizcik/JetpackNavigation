@@ -1,5 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Jetpack Navigation</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome, you should deposit money first</string>
+    <string name="deposit">DEPOSIT</string>
+    <string name="home">HOME</string>
+    <string name="amount">Amount</string>
+    <string name="add_money">ADD MONEY</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="default_money">0$</string>
+    <string name="send_money">Send Money</string>
+    <string name="total_money">Total Money:</string>
+    <string name="default_tv">TextView</string>
+    <string name="name">Name</string>
+    <string name="next">next</string>
+    <string name="tv_error">You don\'t have enough money!!</string>
+    <string name="default_message">$1 was sent to Berk</string>
 </resources>
