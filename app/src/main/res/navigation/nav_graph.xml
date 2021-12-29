@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.berk.jetpacknavigation.fragment.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_depositFragment"
+            app:destination="@id/depositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositFragment"
+        android:name="com.berk.jetpacknavigation.DepositFragment"
+        android:label="fragment_deposit"
+        tools:layout="@layout/fragment_deposit" >
+        <action
+            android:id="@+id/action_depositFragment_to_depositSuccessfulFragment"
+            app:destination="@id/depositSuccessfulFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositSuccessfulFragment"
+        android:name="com.berk.jetpacknavigation.DepositSuccessfulFragment"
+        android:label="fragment_deposit_successful"
+        tools:layout="@layout/fragment_deposit_successful" >
+        <action
+            android:id="@+id/action_depositSuccessfulFragment_to_setRecipientNameFragment"
+            app:destination="@id/setRecipientNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setRecipientNameFragment"
+        android:name="com.berk.jetpacknavigation.SetRecipientNameFragment"
+        android:label="fragment_set_recipient_name"
+        tools:layout="@layout/fragment_set_recipient_name" >
+        <action
+            android:id="@+id/action_setRecipientNameFragment_to_setRecipientAmountFragment"
+            app:destination="@id/setRecipientAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setRecipientAmountFragment"
+        android:name="com.berk.jetpacknavigation.SetRecipientAmountFragment"
+        android:label="fragment_set_recipient_amount"
+        tools:layout="@layout/fragment_set_recipient_amount" >
+        <action
+            android:id="@+id/action_setRecipientAmountFragment_to_sendMoneySuccessfulFragment"
+            app:destination="@id/sendMoneySuccessfulFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendMoneySuccessfulFragment"
+        android:name="com.berk.jetpacknavigation.SendMoneySuccessfulFragment"
+        android:label="fragment_send_money_successful"
+        tools:layout="@layout/fragment_send_money_successful" />
+</navigation>
