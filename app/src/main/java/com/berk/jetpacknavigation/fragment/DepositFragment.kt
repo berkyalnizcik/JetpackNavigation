@@ -15,11 +15,12 @@ class DepositFragment : BaseFragment<FragmentDepositBinding>(FragmentDepositBind
         binding.apply {
             addBtn.setOnClickListener {
                 val addmoney = edtTextAmount.text.toString()
-                val direction =
-                    DepositFragmentDirections.actionDepositFragmentToDepositSuccessfulFragment(
-                        addmoney.toInt()
-                    )
-                findNavController().navigate(direction)
+                    val direction =
+                        DepositFragmentDirections.actionDepositFragmentToDepositSuccessfulFragment(
+                            addmoney.toInt()
+                        )
+                    findNavController().navigate(direction)
+
             }
             cancelBtn.setOnClickListener {
                 findNavController().navigateUp()

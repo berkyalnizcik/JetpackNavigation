@@ -18,7 +18,7 @@ class SetRecipientNameFragment :
         binding.nextBtn.setOnClickListener {
             val name = binding.edtTextName.text.toString()
             val direction = SetRecipientNameFragmentDirections
-                .actionSetRecipientNameFragmentToSetRecipientAmountFragment(name, args.totalmoney)
+                .actionSetRecipientNameFragmentToSetRecipientAmountFragment(name, args.addmoney)
             findNavController().navigate(direction)
         }
         binding.cancelBtn.setOnClickListener {

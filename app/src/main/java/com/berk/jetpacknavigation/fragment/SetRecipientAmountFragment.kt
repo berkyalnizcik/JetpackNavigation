@@ -18,7 +18,7 @@ class SetRecipientAmountFragment :
     private fun onClick() {
         binding.apply {
             sendBtn.setOnClickListener {
-                val totalmoney = args.totalmoney
+                val totalmoney = args.addmoney
                 val amount = edtTextAmount.text.toString()
                 if (totalmoney >= amount.toInt()) {
                     val direction =

@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_depositFragment"
-            app:destination="@id/depositFragment" />
+            app:destination="@id/depositFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/depositFragment"
@@ -21,7 +25,11 @@
         tools:layout="@layout/fragment_deposit">
         <action
             android:id="@+id/action_depositFragment_to_depositSuccessfulFragment"
-            app:destination="@id/depositSuccessfulFragment" />
+            app:destination="@id/depositSuccessfulFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/depositSuccessfulFragment"
@@ -30,7 +38,11 @@
         tools:layout="@layout/fragment_deposit_successful">
         <action
             android:id="@+id/action_depositSuccessfulFragment_to_setRecipientNameFragment"
-            app:destination="@id/setRecipientNameFragment" />
+            app:destination="@id/setRecipientNameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <argument
             android:name="addmoney"
             app:argType="integer" />
@@ -42,9 +54,13 @@
         tools:layout="@layout/fragment_set_recipient_name">
         <action
             android:id="@+id/action_setRecipientNameFragment_to_setRecipientAmountFragment"
-            app:destination="@id/setRecipientAmountFragment" />
+            app:destination="@id/setRecipientAmountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <argument
-            android:name="totalmoney"
+            android:name="addmoney"
             app:argType="integer" />
     </fragment>
     <fragment
@@ -54,12 +70,16 @@
         tools:layout="@layout/fragment_set_recipient_amount">
         <action
             android:id="@+id/action_setRecipientAmountFragment_to_sendMoneySuccessfulFragment"
-            app:destination="@id/sendMoneySuccessfulFragment" />
+            app:destination="@id/sendMoneySuccessfulFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <argument
             android:name="name"
             app:argType="string" />
         <argument
-            android:name="totalmoney"
+            android:name="addmoney"
             app:argType="integer" />
     </fragment>
     <fragment
