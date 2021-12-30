@@ -94,5 +94,14 @@
             android:name="name"
             app:argType="string" />
     </fragment>
-
+    <fragment
+        android:id="@+id/deeplink_dest"
+        android:name="com.berk.jetpacknavigation.fragment.deeplink.DeepLinkFragment"
+        android:label="@string/deeplink"
+        tools:layout="@layout/deeplink_fragment">
+        <argument
+            android:name="myarg"
+            android:defaultValue="Welcome!" />
+        <deepLink app:uri="www.example.com/{myarg}" />
+    </fragment>
 </navigation>

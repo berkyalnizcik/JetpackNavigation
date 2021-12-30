@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/berkk/AndroidStudioProjects/JetpackNavigation/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/berkk/AndroidStudioProjects/JetpackNavigation/app/src/main/res/layout/deep_link_appwidget.xml" value="0.2" />
+        <entry key="..\:/Users/berkk/AndroidStudioProjects/JetpackNavigation/app/src/main/res/layout/deeplink_fragment.xml" value="0.2" />
         <entry key="..\:/Users/berkk/AndroidStudioProjects/JetpackNavigation/app/src/main/res/layout/fragment_deposit.xml" value="0.2" />
         <entry key="..\:/Users/berkk/AndroidStudioProjects/JetpackNavigation/app/src/main/res/layout/fragment_deposit_successful.xml" value="0.2" />
         <entry key="..\:/Users/berkk/AndroidStudioProjects/JetpackNavigation/app/src/main/res/layout/fragment_home.xml" value="0.1859375" />

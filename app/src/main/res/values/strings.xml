@@ -14,4 +14,7 @@
     <string name="next">next</string>
     <string name="tv_error">You don\'t have enough money!!</string>
     <string name="default_message">$1 was sent to Berk</string>
+    <string name="deeplink">Deep Link</string>
+    <string name="deep_link_instructions">Type your deep link args</string>
+    <string name="send_deep_link_notification_button">Send deep link notification</string>
 </resources>

@@ -8,4 +8,8 @@
         android:id="@+id/depositFragment"
         android:icon="@drawable/ic_deposit"
         android:title="@string/deposit" />
+    <item
+        android:id="@id/deeplink_dest"
+        android:icon="@drawable/ic_android"
+        android:title="@string/deeplink" />
 </menu>
